@@ -1,0 +1,49 @@
+body {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+button {
+   margin-top: 50px;
+   padding: 20px;
+   width: 200px;
+   height: 100px;
+   background: lightblue;
+   border-radius: 20px;
+   border: none;
+   font-size: xx-large;
+   transition-duration: 0.3s;
+}
+
+button:hover {
+   background: rgb(83, 188, 223);
+   transform: scale(1.05);
+}
+
+button:active {
+   background: rgb(83, 188, 223);
+   transform: scale(0.95);
+}
+
+#count {
+   font-size: 32px;
+}
+
+#colorButton {
+   font-size: large;
+   font-weight: bolder;
+   background: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      rgb(29, 207, 29),
+      cyan,
+      rgb(61, 61, 245),
+      violet
+  );
+
+}
