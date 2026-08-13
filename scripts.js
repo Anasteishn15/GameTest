@@ -1,11 +1,12 @@
 console.log("ВОТ ЭТОТ SCRIPTS.JS ЗАПУСТИЛСЯ");
 
+
 const params = new URLSearchParams(window.location.search);
 const playerId = params.get("id");
 
 console.log("PLayer: ", playerId);
 
-const socket = new WebSocket("ws://127.0.0.1:8000/ws?id=" + playerId);
+const socket = new WebSocket("wss://127.0.0.1:8000/ws?id=" + playerId);
 
 
 
